@@ -1,0 +1,1434 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/*font: inherit;*/
+	vertical-align: baseline;
+	letter-spacing: 1px;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+body {
+	line-height: 1;
+	font-family: 'Khula',sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1 {
+	font-size: 42px;
+	font-family: 'Lora', serif;
+	font-weight: 100;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+h3 {
+	font-size: 26px;
+}
+
+h4 {
+	font-size: 21px;
+}
+
+p {
+	font-size: 14px;
+    line-height: 25px;
+    color: #9a9a9a;
+}
+
+
+
+.width-100 {
+	width: 100%;
+}
+
+.width-80 {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.width-70 {
+	width: 70%;
+	margin: 0 auto;
+ }
+
+.width-60 {
+	width: 60%;
+	margin: 0 auto;
+ }
+
+.width-50 {
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 70px;
+ }
+
+.margin-70 {
+	margin-bottom: 70px;
+	margin-top: 70px;
+}
+
+.margin-top-bottom-70 {
+	padding-top: 70px;
+	margin-bottom: 70px;
+ }
+
+/* ************************************** MENU ************************************** */
+
+/* ////// LOGO ////// */
+
+.h-logo-cont {
+	text-align: center;
+	margin: 10px 0 10px 0;
+}
+
+.h-logo-cont img {
+	width: 100px;
+}
+
+/* ////// END: LOGO ////// */
+
+
+.menu {
+	text-align: center;
+	background: #243478;
+}
+
+.menu li {
+	display: inline-block;
+	line-height: 50px;
+	margin-right: 20px;
+}
+
+.menu li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	padding: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.menu li a:hover {
+	color: #c8c8c8;
+}
+
+
+/* ************************************** END: MENU ************************************** */
+
+
+
+
+
+
+
+
+
+/* ************************************** TOP IMG ************************************** */
+
+.top-image-cont img {
+    width: 100%;
+}
+/* ************************************** END: TOP IMG ************************************** */
+
+
+
+
+
+
+
+
+/* ************************************** GOALS ************************************** */
+
+
+
+
+
+/*.goals-image:before {
+	content: '';
+	position: absolute;
+	background-image:url('img/trasparent-icon.png');
+	width: 100%;
+	height: 50px;
+	top: 0;
+	left: 0;
+}*/
+
+.goals-cont {
+	background: #f7f7f7;
+}
+
+.goals {
+	text-align: center;
+	position: relative;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.goals-image {
+	text-align: center;
+	position: relative;
+	background-color: #efefef;
+	line-height: 80px;
+	border-bottom: solid 2px #d4d4d4;
+}
+
+.goals-text-cont {
+	width: 25%;
+	margin: 30px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.goals-text-cont:focus {
+	border: solid 1px red;
+}
+
+
+.goals-height {
+	position: relative;
+}
+
+.goals-icon {
+    width: 50%;
+    margin:0 auto;
+}
+
+.goals-icon img {
+	width: 100%
+}
+
+.h2-goals {
+	color: #000;
+	text-transform: capitalize;
+	padding: 20px 0 40px 0;
+}
+
+.p-goals {
+	padding: 10px;
+	color: #000;
+}
+
+.p-goals p {
+	color: #fff;
+}
+
+
+
+/* ////// FLIP BOX ////// */
+
+.wrapper{ width: 980px; margin: 0 auto;  background-color: #bdd3de; hoverflow: hidden;}
+
+.panel {
+	-webkit-perspective: 600px;
+	-moz-perspective: 600px;
+}
+
+.panel .front,
+.panel .back {
+	text-align: center;
+}
+	
+.panel .front {
+	height: inherit;
+	top: 0;
+	z-index: 900;
+	text-align: center;
+	-webkit-transform: rotateX(0deg) rotateY(0deg);
+	   -moz-transform: rotateX(0deg) rotateY(0deg);
+	-webkit-transform-style: preserve-3d;
+	   -moz-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	   -moz-backface-visibility: hidden;
+	-webkit-transition: all .4s ease-in-out;
+	   -moz-transition: all .4s ease-in-out;
+		-ms-transition: all .4s ease-in-out;
+		 -o-transition: all .4s ease-in-out;
+			transition: all .4s ease-in-out;
+}
+
+.panel .back {
+	height: inherit;
+	position: absolute;
+	top: 0;
+	z-index: 1000;
+	-webkit-transform: rotateY(-180deg);
+	   -moz-transform: rotateY(-180deg);
+	-webkit-transform-style: preserve-3d;
+	   -moz-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+	   -moz-backface-visibility: hidden;
+	-webkit-transition: all .4s ease-in-out;
+	   -moz-transition: all .4s ease-in-out;
+		-ms-transition: all .4s ease-in-out;
+		 -o-transition: all .4s ease-in-out;
+			transition: all .4s ease-in-out;
+}
+.panel.flip .front {
+	z-index: 900;
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+}
+.panel.flip .back {
+	z-index: 1000;
+	-webkit-transform: rotateX(0deg) rotateY(0deg);
+	-moz-transform: rotateX(0deg) rotateY(0deg);
+}
+.box1{
+	background-color: #fff;
+	width: 85%;
+	height: 400px;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+.box2{
+	background-color: #09803f;
+	width: 85%;
+	height: 400px;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+/* ////// END: FLIP BOX ////// */
+
+
+/* ************************************** END: GOALS ************************************** */
+
+
+
+
+
+
+
+
+/* ************************************** TEAM ************************************** */
+
+.team-full-cont {
+	background: #efefef;
+}
+
+.team-cont {
+	text-align: center;
+}
+
+.team-info-cont {
+	width: 20%;
+    margin: 30px;
+    vertical-align: top;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+}
+
+.team-img {
+
+}
+
+.team-self-info {
+	margin-top: 30px;
+}
+
+.team-info-cont img {
+	border-radius: 50%;
+	width: 100%;
+	border: solid 4px #fff;
+}
+
+.team-h3 {
+	margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #242021;
+	text-transform: uppercase;
+}
+
+.team-h3:hover {
+	color: #09803f;
+}
+
+.team-h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #494647;
+}
+
+.team-p {
+	margin: 20px;
+}
+/* ************************************** END: TEAM ************************************** */
+
+
+
+
+
+
+/* ************************************** PARTNERS-SLIDER ************************************** */
+
+.partners-cont {
+	text-align: center;
+}
+
+.partners-h1 {
+	margin-bottom: 50px;
+}
+
+/* ************************************** END: PARTNERS-SLIDER ************************************** */
+
+
+
+
+
+
+/* ************************************** DONATION-HOME-PAGE ************************************** */
+
+.donation-home-page {
+	background: url('donations.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+	text-align: center;
+	padding-bottom: 70px;
+}
+
+.donation-home-page p {
+	color: #fff;
+}
+
+.donation-h1 {
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.donation-home-imgs-cont {
+	text-align: center;
+	margin-top: 20px;
+}
+
+
+.donation-img-width {
+	width: 12%;
+	display: inline-block;
+    margin: 50px;
+}
+
+.events {
+	width: 10%;
+}
+.volunteers {
+    width: 15%;
+    margin-left: 0px;
+}
+
+.events:hover .events-hover, .donation:hover .donation-hover, .volunteers:hover .volunteers-hover {
+	opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: 0.2s;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.events, .donation, .volunteers {
+    z-index: 1;
+    text-align: center;
+    transition: 0.2s;
+    position: relative;
+}
+
+.events .events-hover, .donation .donation-hover, .volunteers .volunteers-hover  {
+    /* display: none; */
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    right: 0;
+    transition: 0.2s;
+    bottom: 0;
+    margin: auto;
+}
+
+.donation-h3 {
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+
+
+.donation-h5, .donation-h4{
+	margin-top: 15px;
+	color: #fff;
+}
+
+
+.donation-button-cont {
+	padding: 20px;
+}
+
+.donation-button-cont a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	letter-spacing: 1px;
+	background: #09803f;
+	padding: 10px 20px 10px 20px;
+	border-radius: 5px;
+}
+
+
+.donation-button-cont a:hover {
+	box-shadow: 0 0 5px #fff;
+	transition: 0.5s;
+}
+   
+
+
+/* ************************************** END: DONATION-HOME-PAGE ************************************** */
+
+
+
+
+
+
+
+/* ************************************** SCROLL TO TOP ************************************** */
+
+.scrollToTop {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    text-align: center;
+    background: #09803f;
+    font-weight: 500;
+    color: #444;
+    text-decoration: none;
+    position: fixed;
+    bottom: 75px;
+    right: 40px;
+    display: none;
+    border-radius: 50px;
+    z-index: 998;
+}
+
+.scrollToTop:after {
+    content: '\f106';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 8px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    font-size: 25px;
+    color: #fff;
+}
+
+
+.scrollToTop:hover {
+	background: #fff;
+}
+
+.scrollToTop:hover, .scrollToTop:hover:after {
+    transition: 0.4s;
+}
+
+.scrollToTop:hover:after {
+	color: #000;
+}
+/* ************************************** END: SCROLL TO TOP ************************************** */
+
+
+
+
+
+
+
+/* ************************************** VESTI PAGE ************************************** */
+
+.last-blog-post-container {
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.last-blog-image, .last-blog-inf {
+	width: 100%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.last-blog-inf {
+	margin-top: 20px;
+}
+
+
+.full-blog {
+	background: #f8f8f8; 
+}
+
+.blog-full-container {
+    float: left;
+    width: 75%;
+}
+
+.blog-full-container img {
+	width: 100%;
+	height: auto;
+}
+
+.blog-post-container {
+	display: inline-block;
+    width: 45%;
+    margin: 20px 0px 60px 29px;
+	vertical-align: top;
+}
+
+
+.blog-inf {
+	padding: 10px;
+}
+
+.title-blog-post {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.blog-inf {
+	text-align: left;
+}
+
+.a-link-style a {
+	text-decoration: none;
+	color: #000;
+	font-weight: 600;
+}
+
+.p-style span {
+	color: #000;
+}
+
+.p-style {
+	margin-bottom: 10px;
+}
+
+.p-style a:hover {
+	text-decoration: underline;
+}
+
+
+/* ////// Sidebar ////// */
+
+.blog-sidebar-container {
+	width: 20%;
+	float: right;
+}
+
+/* ////// END: Sidebar ////// */
+
+/* ************************************** END: VESTI PAGE ************************************** */
+
+
+
+
+/* ************************************** VESTI PAGE - SIDE BAR ************************************** */
+
+.blog-sidebar-container li {
+	list-style: none;
+}
+
+.widget {
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.widget h2 {
+	margin-bottom: 10px;
+	font-size: 24px;
+}
+
+
+
+.widget_search form {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.widget_search form input {
+    border-radius: 3px;
+    border: solid 1px lightgrey;
+    padding: 5px;
+    width: 80%;
+}
+
+.widget_search form label,.widget_search form input[type=submit]  {
+	display: none;
+}
+
+.widget_recent_entries ul li {
+	text-align: left;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-bottom: solid 1px #9a9a9a;
+}
+
+.widget_recent_entries ul li a {
+	text-decoration: none;
+	color: #000;
+	font-size: 14px;
+}
+/* ************************************** END: VESTI PAGE - SIDE BAR ************************************** */
+
+
+
+
+
+/* ************************************** POST PAGE ************************************** */
+
+.single-post-picture img {
+	width: 100%;
+	height: auto;
+}
+
+.single-post-picture span {
+	font-size: 10px;
+}
+
+.blog-post-span {
+	position: relative;
+	display: block;
+}
+
+/*.blog-post-span:before {
+	content: "";
+    border-bottom: 1px solid #243478;
+    width: 15%;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    z-index: 0;
+}
+
+.blog-post-span:after {
+	content: "";
+    border-bottom: 1px solid #243478;
+    width: 15%;
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    z-index: 0;
+}
+*/
+.blog-post-info {
+	text-align: center;
+	width: 90%;
+    margin: 0 auto;
+}
+
+.span-last-post {
+	width: 40%;
+	margin: 0 auto;
+}
+
+.blog-post-info span {
+	font-size: 12px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	z-index: 2;
+	color: #243478;
+}
+
+
+/* ************************************** END: POST PAGE ************************************** */
+
+
+
+
+
+
+
+/* ************************************** KONTAKT PAGE ************************************** */
+
+.form-full {
+	background: url('donations.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.form-full-container {
+    border-radius: 5px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.wpcf7-submit {
+	width: 50%!important;
+}
+
+.form-container, .form-inf-cont {
+	width: 45%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px;
+    margin-top: 30px;
+}
+
+.wpcf7-form p {
+	padding: 10px;
+}
+
+.form-inf-cont {
+	color: #fff;
+    padding-top: 20px;
+}
+
+.font-inf {
+    margin-bottom: 30px;  
+    padding-left: 30px;
+}
+
+.form-h3 {
+	margin-bottom: 50px;
+	padding-left: 30px;
+}
+
+.font-inf p {
+	color: #fff;
+}
+
+.font-inf i {
+	margin-right: 20px;
+}
+
+.wpcf7-form input, textarea {
+	border-radius: 3px;
+    border: solid 1px lightgrey;
+    padding: 10px;
+    width: 100%
+}
+
+.wpcf7-form p:nth-child(6) {
+	width: 50%;
+}
+
+.wpcf7-submit {
+	color: #fff;
+	background-color: #09803f;
+}
+
+
+
+/* ////// Google map ////// */
+
+.acf-map {
+    height: 500px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+/* fixes potential theme css conflict */
+.acf-map img {
+   max-width: inherit !important;
+}
+
+/* ////// END: Google map ////// */
+
+
+/* ************************************** END: KONTAKT PAGE ************************************** */
+
+
+
+
+
+
+
+/* ************************************** GALERIJA PAGE ************************************** */
+  
+.gallery-ul {
+ 	text-align: center;
+}
+
+.gallery-ul li {
+	display: inline-block;
+	width: 30%; 
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+
+/* ////// Owl arrows ////// */
+
+.owl-prev, .owl-next {
+	position: absolute;
+    top: 100px;
+    color: #9E9E9E!important;
+    font-size: 50px!important;
+}
+
+.owl-prev {
+    left: -30px;
+}
+
+.owl-next {
+    right: -30px;
+}
+
+/* ////// END: Owl arrows ////// */
+
+
+/* ************************************** END: GALERIJA PAGE ************************************** */
+
+
+
+
+
+
+
+/* ************************************** O NAMA PAGE ************************************** */
+
+.video-container {
+	text-align: center;
+}
+
+.video-container iframe {
+	width: 100%;
+	height: -webkit-fill-available;
+}
+
+/* ************************************** END: O NAMA PAGE ************************************** */
+
+
+
+
+
+
+
+/* ************************************** FOOTER ************************************** */
+
+footer {
+	float: left;
+	width: 100%;
+	background: #091b27;
+
+	/*background: url('original logo.jpg');
+	background-attachment: fixed;
+    background-position: center;
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    position: relative;*/
+}
+
+
+.footer-content {
+	width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.widget-footer {
+	color: #fff;
+    width: 22%;
+    display: inline-block;
+    padding: 20px 60px;
+    list-style: none;
+    vertical-align: top;
+    text-align: left;
+}
+
+.widget-footer h2 {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.widget-footer .textwidget p, .widget-footer ul li a, .footer-post-title a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.widget-footer .textwidget p {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+.fab {
+	padding: 10px;
+    font-size: 20px;
+}
+
+.widget-footer ul li {
+	
+}
+
+.widget-footer ul li  {
+	border-bottom: solid 1px #ffffff;
+
+}
+
+.widget-footer .aligncenter li a {
+	font-size: 25px!important;
+	margin-top: 20px;
+}
+
+.widget-footer .menu-footer-menu-container ul {
+	background: none;
+
+}
+
+.widget-footer .menu-footer-menu-container ul li, .footer-content li:nth-child(3) ul li {
+	list-style: initial;
+	border: none;
+}
+
+.widget-footer .menu-footer-menu-container ul li {
+	width: 60%;
+}
+
+.menu-footer-menu-container .menu {
+	text-align: left;
+}
+
+.menu-footer-menu-container .menu li {
+	margin-bottom: 30px;
+	line-height: 0;
+}
+
+.widget-footer .menu-footer-menu-container ul li a, .widget-footer ul li a{
+	font-size: 14px;
+	padding: 0;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.widget-footer .menu-footer-menu-container ul li a:hover, .widget-footer ul li a:hover, .footer-post-title a:hover {
+	color: #9E9E9E;
+}
+
+.footer-post-title, .footer-post-img {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.footer-post-title {
+	margin-left: 10px;
+}
+
+
+.widget_text p:nth-child(4), .widget_text p:nth-child(5), .widget_text p:nth-child(6), .widget_text p:nth-child(7) {
+	width: 20%;
+	float: left;
+}
+
+.widget_text p:nth-child(4) img, .widget_text p:nth-child(5) img, .widget_text p:nth-child(6) img, .widget_text p:nth-child(7) img {
+	width: 50px;
+	height: 40px;
+}
+
+.rpwwt-widget ul li:last-child {
+	border: none;
+}
+
+/* ************************************** END: FOOTER ************************************** */
+
+
+
+
+
+
+
+
+
+
+
+/* ************************************** RESPONSIVE ************************************** */
+
+@media only screen and (max-width: 1350px) {
+	.width-70 {
+		width: 90%;
+	}
+}
+
+
+
+@media only screen and (max-width: 1060px) {
+
+	/*============ POCETNA PAGE RESPONSIVE ============*/
+
+
+	/*------ GOALS ------ */
+	.goals-text-cont {
+		width: 40%;
+	}
+	/*------ END GOALS ------ */
+
+
+	/*------ DONATION ------ */
+	.donation-img-width {
+		width: 20%;
+	}
+
+	.events {
+		width: 13%;
+	}
+	/*------ END: DONATION ------ */
+
+	/*============ END POCETNA PAGE RESPONSIVE ============*/
+
+
+
+
+
+	/*============ VESTI PAGE RESPONSIVE ============*/
+
+	.blog-post-container {
+		width: 100%;
+		margin: 0px 0px 60px 0px;
+	}
+
+	/*============ END: VESTI PAGE RESPONSIVE ============*/
+
+
+
+
+
+
+
+	/*============ FOOTER RESPONSIVE ============*/
+
+
+	.widget-footer {
+		padding: 20px 30px;
+	}
+
+
+	/*============ END: FOOTER RESPONSIVE ============*/
+
+}
+
+@media only screen and (max-width: 900px) {
+
+	/*============ POCETNA PAGE RESPONSIVE ============*/
+
+	/*------ GOALS ------ */
+	.goals-text-cont {
+		width: 60%;
+	}
+	/*------ END: GOALS ------ */
+
+	/*============ END POCETNA PAGE RESPONSIVE ============*/
+
+
+
+	/*============ KONTAKT PAGE RESPONSIVE ============*/
+
+	.form-full-container {
+		width: 70%;
+	}	
+
+	.form-container, .form-inf-cont {
+		width: 80%;
+	}
+
+	/*============ END: KONTAKT PAGE RESPONSIVE ============*/
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+	/*============ POCETNA PAGE RESPONSIVE ============*/
+
+
+	/*------ DONATION ------ */
+	.donation-img-width {
+		width: 30%;
+		display: block;
+		margin: 0 auto;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	/*------ END: DONATION ------ */
+
+
+	/*============ END: POCETNA PAGE RESPONSIVE ============*/
+
+
+
+
+
+	/*============ VESTI PAGE RESPONSIVE ============*/
+
+	.blog-full-container {
+		width: 100%;
+	}
+
+	.blog-sidebar-container {
+		width: 100%;
+		padding: 0;
+	}
+
+	.blog-inf-container {
+		margin-bottom: 80px;
+	}
+
+	.simple-social-icons ul li {
+		float: none!important;
+		display: inline-block;
+		width: 10%;
+	}
+
+	/*============ END: VESTI PAGE RESPONSIVE ============*/
+
+
+
+
+
+
+
+	/*============ FOOTER RESPONSIVE ============*/
+
+
+	.widget-footer {
+		width: 80%;
+	}	
+
+
+	/*============ END: FOOTER RESPONSIVE ============*/
+
+
+}
+
+
+
+
+@media only screen and (max-width: 720px) {
+
+
+	/*============ POCETNA PAGE RESPONSIVE ============*/
+
+	/*------ GOALS ------ */
+	.goals-text-cont {
+		width: 80%;
+	}
+	/*------ END: GOALS ------ */
+
+
+	/*------ TEAM ------ */
+	.team-info-cont {
+		width: 40%;
+		margin: 15px;
+	}
+	/*------ END: TEAM ------ */
+
+	/*============ END POCETNA PAGE RESPONSIVE ============*/
+
+
+
+	/*============ HAMBURGER MENU ============*/
+	
+	.sticky {
+	  position: fixed;
+	  top: 0;
+	  width: 100%;
+	  margin-top: 45px;
+	}
+
+	.menu-nav ul li {
+		display: block;
+		line-height: 70px;
+	}
+
+	.hamburger-responsive-container {
+	    display: block;
+    	background: #243478;
+   	 	padding-top: 10px;
+   	 	padding-bottom: 10px;
+   	 	width: 100%;
+   	 	z-index: 100;
+	}
+
+	.container-hamburger {
+	    display: inline-block;
+    	cursor: pointer;
+    	vertical-align: text-top;
+    	padding-left: 30px;
+	}
+
+	.container-hamburger .bar1 {
+		width: 35px;
+	}
+
+	.container-hamburger .bar3 {
+		width: 35px;
+    	margin-left: 20px;
+	}
+
+	.container-hamburger .bar1, .container-hamburger .bar2, .container-hamburger .bar3 {
+   	 	height: 5px;
+	    background-color: #fff;
+	    border-radius: 25px;
+	    margin: 6px 0;
+	    transition: 0.7s;
+	}
+
+	.change .bar1 {
+	    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    	transform: rotate(-45deg) translate(-9px, 6px);
+	    width: 40px;
+	    margin: 0;
+	    margin-top: 5px;
+	}
+
+	.change .bar2 {
+	    opacity: 0;
+	}
+
+	.change .bar3 {
+		-webkit-transform: rotate(45deg) translate(-8px, -8px);
+	    transform: rotate(45deg) translate(-8px, -8px);
+	    width: 40px;
+	    margin-left: 0;
+	}
+
+	.overlay.open {
+		height: 70%;
+	    margin-top: 82px;
+	    opacity: 1;
+	    visibility: visible;
+	    z-index: 100;
+	}
+
+	.overlay {
+	    position: absolute;
+	    top: 136px;
+	    left: 0;
+	    width: 100%;
+	    height: 0%;
+	    opacity: 0;
+	    visibility: hidden;
+	    transition: opacity .35s, visibility .35s, height .35s;
+	    overflow: hidden;
+	}
+	/*============ END: HAMBURGER MENU ============*/
+
+
+
+	/*============ KONTAKT PAGE RESPONSIVE ============*/
+
+	.form-full-container {
+		width: 80%;
+	}
+
+	.form-container, .form-inf-cont {
+		width: 90%;
+	}
+
+	/*============ END: KONTAKT PAGE RESPONSIVE ============*/
+
+}
+
+
+
+
+@media only screen and (max-width: 400px) {
+
+	/*============ POCETNA PAGE RESPONSIVE ============*/
+
+	/*------ GOALS ------ */
+	.goals-text-cont {
+		width: 90%;
+	}
+	/*------ END: GOALS ------ */
+
+
+
+	/*------ TEAM ------ */
+	.goals-image {
+	    line-height: 45px;
+	}
+
+	.team-info-cont {
+		width: 90%;
+		margin: 15px;
+	}
+	/*------ END: TEAM ------ */
+
+	/*============ END POCETNA PAGE RESPONSIVE ============*/
+
+
+
+	/*============ KONTAKT PAGE RESPONSIVE ============*/
+
+	.form-full-container {
+		width: 90%;
+	}
+
+	.form-container, .form-inf-cont {
+		width: 90%;
+	}
+
+	/*============ END: KONTAKT PAGE RESPONSIVE ============*/
+
+}
+
+/* ************************************** END: RESPONSIVE ************************************** */
